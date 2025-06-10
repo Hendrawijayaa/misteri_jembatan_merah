@@ -4,15 +4,15 @@
   "description": "Sebuah game petualangan interaktif berbasis web dengan tema misteri di Surabaya tahun 1930-an",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.4",
-    "tailwindcss": "^3.4.3"
+    "@tailwindcss/postcss": "^4.1.8",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
   }
 }

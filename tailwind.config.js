@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./public/**/*.html",
-    "./js/**/*.js",
-  ],
+export default {
   theme: {
-    extend: {},
+    extend: {
+      // Jika Anda punya custom font atau warna, biarkan di sini
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Lora", "serif"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
