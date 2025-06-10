@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misteri Hilangnya Pusaka di Jembatan Merah</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-stone-200 font-sans">
+
+    <div class="container mx-auto min-h-screen flex items-center justify-center p-4 sm:p-8">
+        
+        <main class="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <div class="lg:col-span-2 flex flex-col">
+                <div id="narrative-box" class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 lg:p-8 shadow-lg backdrop-blur-sm">
+                    <h1 class="font-serif text-2xl lg:text-3xl font-bold text-amber-400 mb-4">Jembatan Merah</h1>
+                    <p id="narrative-text" class="font-serif text-lg lg:text-xl leading-relaxed">
+                        Pagi yang berkabut di Surabaya. Kamu tiba di Jembatan Merah yang ramai. Menurut kabar angin, pusaka keris milik Saudagar Rahman hilang di sini semalam. Apa langkah pertamamu?
+                    </p>
+                </div>
+
+                <div id="choices-area" class="mt-6 flex flex-col space-y-4">
+                    <button data-choice-id="A" class="w-full text-left bg-slate-700 text-stone-200 py-3 px-5 rounded-lg shadow-md hover:bg-amber-600 hover:shadow-lg transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <span class="font-semibold">A.</span> Bicara dengan penjual kue di sudut jembatan
+                    </button>
+                    <button data-choice-id="B" class="w-full text-left bg-slate-700 text-stone-200 py-3 px-5 rounded-lg shadow-md hover:bg-amber-600 hover:shadow-lg transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <span class="font-semibold">B.</span> Periksa area di bawah jembatan yang sepi
+                    </button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-slate-800 rounded-lg p-6 shadow-lg h-full">
+                    <img id="scene-image" src="https://placehold.co/600x400/222/FFF?text=Jembatan+Merah+1930" alt="Suasana Jembatan Merah di tahun 1930-an" class="rounded-lg w-full object-cover mb-6">
+                    
+                    <h2 class="text-xl font-bold text-amber-400 mb-4">Inventaris Petunjuk</h2>
+                    <ul id="inventory-list" class="space-y-3 text-stone-300">
+                        <li>
+                            <p class="italic">Belum ada petunjuk.</p>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
