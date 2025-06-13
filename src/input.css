@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+body {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('/assets/ui/latar_utama.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#scene-image {
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    animation: slow-pan 25s infinite alternate ease-in-out;
+}
+
+@keyframes slow-pan {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Kelas untuk transisi fade-in/out pada seluruh konten utama */
+main.fade-out {
+    opacity: 0;
+}
+
+/* Keyframes untuk animasi tombol muncul */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Kelas untuk menerapkan animasi pada tombol */
+.choice-button-animate {
+    animation: fade-in-up 500ms forwards;
+    opacity: 0;
+}
