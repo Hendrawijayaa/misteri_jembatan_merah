@@ -1,6 +1,7 @@
 {
   "name": "misteri_jembatan_merah",
   "version": "1.0.0",
+  "type": "module",
   "description": "Sebuah game petualangan interaktif berbasis web dengan tema misteri di Surabaya tahun 1930-an",
   "main": "index.js",
   "scripts": {
@@ -14,5 +15,11 @@
     "@tailwindcss/postcss": "^4.1.8",
     "tailwindcss": "^4.1.8",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
   }
 }

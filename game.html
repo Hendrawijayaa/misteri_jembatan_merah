@@ -15,45 +15,95 @@
     <link href="/src/input.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-900 text-stone-200 font-sans relative overflow-hidden">
-    
     <div class="absolute top-0 left-0 w-full h-full z-0">
-        <div class="aurora-shape-1 absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-3xl animate-pulse"></div>
-        <div class="aurora-shape-2 absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-sky-500/10 rounded-full filter blur-3xl animate-pulse animation-delay-4000"></div>
+      <div
+        class="aurora-shape-1 absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-amber-500/10 rounded-full filter blur-3xl animate-pulse"
+      ></div>
+      <div
+        class="aurora-shape-2 absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-sky-500/10 rounded-full filter blur-3xl animate-pulse animation-delay-4000"
+      ></div>
     </div>
 
     <div
-      class="container mx-auto min-h-screen flex items-center justify-center p-4 sm:p-8 relative z-10"
+      class="w-full min-h-screen flex items-center justify-center p-4 sm:p-8 relative z-10"
     >
       <main
-        class="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 transition-opacity duration-300"
+        class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 transition-opacity duration-300"
       >
         <div class="lg:col-span-2 flex flex-col">
-          <div id="portrait-container" class="mb-4 h-40 w-40 self-center rounded-full shadow-lg transition-opacity duration-500 opacity-0 lg:h-48 lg:w-48">
-              <img id="portrait-image" src="" alt="Potret Karakter" class="h-full w-full object-cover rounded-full border-4 border-slate-700">
+          <div
+            id="portrait-container"
+            class="mb-4 h-40 w-40 self-center rounded-full shadow-lg transition-opacity duration-500 opacity-0 lg:h-48 lg:w-48"
+          >
+            <img
+              id="portrait-image"
+              src=""
+              alt="Potret Karakter"
+              class="h-full w-full object-cover rounded-full border-4 border-slate-700"
+            />
           </div>
-          <div id="narrative-box" class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 lg:p-8 shadow-lg backdrop-blur-sm">
-            <h1 id="scene-title" class="font-serif text-2xl lg:text-3xl font-bold text-amber-400 mb-4"></h1>
-            <p id="narrative-text" class="font-serif text-lg lg:text-xl leading-relaxed"></p>
+          <div
+            id="narrative-box"
+            class="bg-slate-800/50 border border-slate-700 rounded-lg p-6 lg:p-8 shadow-lg backdrop-blur-sm"
+          >
+            <h1
+              id="scene-title"
+              class="font-serif text-2xl lg:text-3xl font-bold text-amber-400 mb-4"
+            ></h1>
+            <p
+              id="narrative-text"
+              class="font-serif text-lg lg:text-xl leading-relaxed"
+            ></p>
           </div>
           <div id="choices-area" class="mt-6 flex flex-col space-y-4"></div>
         </div>
 
         <div class="lg:col-span-1">
-          <div class="bg-slate-800 rounded-lg p-6 shadow-lg h-full flex flex-col">
-            <img id="scene-image" src="" alt="Suasana adegan" class="rounded-lg w-full object-cover mb-6 aspect-[3/2]"/>
-            <h2 class="text-xl font-bold text-amber-400 mb-4">Inventaris Petunjuk</h2>
-            <ul id="inventory-list" class="space-y-3 text-stone-300 flex-grow"></ul>
+          <div
+            class="bg-slate-800 rounded-lg p-6 shadow-lg h-full flex flex-col"
+          >
+            <img
+              id="scene-image"
+              src=""
+              alt="Suasana adegan"
+              class="rounded-lg w-full object-cover mb-6 aspect-[3/2]"
+            />
+            <h2 class="text-xl font-bold text-amber-400 mb-4">
+              Inventaris Petunjuk
+            </h2>
+            <ul
+              id="inventory-list"
+              class="space-y-3 text-stone-300 flex-grow"
+            ></ul>
           </div>
         </div>
       </main>
     </div>
 
-    <div id="item-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm items-center justify-center p-4 hidden">
-        <div class="bg-slate-800 border border-slate-700 p-6 rounded-lg shadow-2xl w-full max-w-md text-center flex flex-col items-center">
-            <h3 id="modal-item-name" class="text-2xl font-serif text-amber-400 mb-4"></h3>
-            <img id="modal-item-image" src="" alt="Detail Item" class="w-auto h-auto max-w-full max-h-80 rounded-lg mb-6 border-2 border-slate-600">
-            <button id="modal-close-button" class="bg-amber-600 text-slate-900 font-bold py-2 px-8 rounded-lg hover:bg-amber-500 transition-colors">Tutup</button>
-        </div>
+    <div
+      id="item-modal"
+      class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm items-center justify-center p-4 hidden"
+    >
+      <div
+        class="bg-slate-800 border border-slate-700 p-6 rounded-lg shadow-2xl w-full max-w-md text-center flex flex-col items-center"
+      >
+        <h3
+          id="modal-item-name"
+          class="text-2xl font-serif text-amber-400 mb-4"
+        ></h3>
+        <img
+          id="modal-item-image"
+          src=""
+          alt="Detail Item"
+          class="w-auto h-auto max-w-full max-h-80 rounded-lg mb-6 border-2 border-slate-600"
+        />
+        <button
+          id="modal-close-button"
+          class="bg-amber-600 text-slate-900 font-bold py-2 px-8 rounded-lg hover:bg-amber-500 transition-colors"
+        >
+          Tutup
+        </button>
+      </div>
     </div>
 
     <script type="module" src="/js/main.js"></script>
